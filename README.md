@@ -8,7 +8,9 @@ A practice app for the Philippine Civil Service Exam (Professional and Sub-Profe
 - **Progress tracking**: scores are saved per topic in the browser, and topics below 75% are flagged.
 - **Dark mode**.
 
-Independent review tool. Not affiliated with or endorsed by the Civil Service Commission.
+Practice questions are from the [CSE Reviewer ebook by Teach Pinas](https://www.teachpinas.com/download/cse-reviewer-ebook-professional-and-sub-professional/). All rights to the questions belong to Teach Pinas.
+
+Independent, free review tool. Not affiliated with or endorsed by the Civil Service Commission.
 
 ## Develop
 

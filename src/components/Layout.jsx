@@ -34,7 +34,6 @@ export default function Layout() {
       <header className="sticky top-0 z-30 border-b border-navy-950/5 bg-cream/85 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:h-20 md:px-6">
           <Link to="/" className="flex items-center gap-3">
-            <img src="./csc-logo.png" alt="" className="h-8 w-auto dark:rounded-lg dark:bg-white dark:p-1 md:h-9" />
             <span className="leading-tight">
               <span className="block text-[15px] font-bold tracking-tight text-navy-950">CSE Reviewer</span>
               <span className="block text-[11px] font-medium text-navy-950/50">Professional &amp; Sub-Professional</span>
@@ -72,7 +71,19 @@ export default function Layout() {
       </main>
 
       <footer className="mx-auto max-w-6xl px-4 pb-8 text-center text-xs text-navy-950/40 md:px-6">
-        Independent review tool. Not affiliated with or endorsed by the Civil Service Commission.
+        <p>
+          Practice questions are from the{' '}
+          <a
+            href="https://www.teachpinas.com/download/cse-reviewer-ebook-professional-and-sub-professional/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-navy-950"
+          >
+            CSE Reviewer ebook by Teach Pinas
+          </a>
+          . All rights to the questions belong to Teach Pinas.
+        </p>
+        <p className="mt-1">Independent, free review tool. Not affiliated with or endorsed by the Civil Service Commission.</p>
       </footer>
 
       {/* Mobile tab bar */}
