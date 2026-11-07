@@ -6,6 +6,8 @@ import { getProgress, resetProgress } from '../lib/progress.js'
 import Icon from '../components/Icon.jsx'
 import AnswerSheetArt from '../components/AnswerSheetArt.jsx'
 import { useFlags, FLAGGED } from '../lib/flags.js'
+import { areaScores } from '../data/syllabus.js'
+import AreaBars from '../components/AreaBars.jsx'
 
 const PASSING = 75 // percent; categories below this need more focus
 const categories = Object.keys(countByCategory)
@@ -235,7 +237,13 @@ export default function Dashboard() {
             </div>
           </dl>
 
-          <ul className="mt-7 grid gap-x-10 gap-y-4 border-t border-navy-950/5 pt-6 md:grid-cols-2">
+          <div className="mt-7 border-t border-navy-950/5 pt-6">
+            <h3 className="mb-4 text-sm font-bold text-navy-950/70">By exam area</h3>
+            <AreaBars areas={areaScores(progress)} />
+          </div>
+
+          <h3 className="mt-7 border-t border-navy-950/5 pt-6 text-sm font-bold text-navy-950/70">By topic</h3>
+          <ul className="mt-4 grid gap-x-10 gap-y-4 md:grid-cols-2">
             {rows.map((r) => (
               <li key={r.name}>
                 <div className="flex justify-between gap-3 text-sm">
